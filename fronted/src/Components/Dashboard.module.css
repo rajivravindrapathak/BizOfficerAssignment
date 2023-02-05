@@ -1,0 +1,74 @@
+.mainDiv {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% );
+    margin: -8px;
+    gap: 18px;
+    box-sizing: border-box;
+    padding-left: 3%;
+    margin-top: 3%;
+}
+
+.div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10, .div11, .div12, .div13, .div14  {
+    cursor: pointer;
+}
+
+.btn {
+    align-items: center;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn > div {
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+    overflow: hidden;
+}
+
+.btn > div > div {
+    padding: 16px;
+    text-align: left!important;
+    padding: 0 8px 8px;
+    width: 140px;
+    min-height: 80px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    border-top: 2px solid #e39321;
+    color: rgba(0,0,0,.6)!important;
+}
+
+button > div > div:hover {
+    padding: 16px;
+    text-align: left!important;
+    padding: 0 8px 8px;
+    width: 140px;
+    min-height: 80px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    border-top: 2px solid #344bcf;
+    color: rgba(0,0,0,.6)!important;
+    background-color: rgb(97, 245, 134);
+}
