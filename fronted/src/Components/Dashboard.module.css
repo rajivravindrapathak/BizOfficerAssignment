@@ -72,3 +72,10 @@ button > div > div:hover {
     color: rgba(0,0,0,.6)!important;
     background-color: rgb(97, 245, 134);
 }
+
+
+.bar1 {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-evenly;
+}
