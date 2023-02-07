@@ -54,6 +54,9 @@ const Dashboard = () => {
         }
       ];
 
+      let maxVal = 0xFFFFFF; // 16777215
+// let randomNumber = Math.random() * maxVal;
+
     return ( 
         <div>
             <div className="mainDiv">
@@ -233,7 +236,7 @@ const Dashboard = () => {
                             <Tooltip />
                             <Legend />
                             <CartesianGrid strokeDasharray="3 3" />
-                            <Bar dataKey="count" fill="#8884d8" background={{ fill: '#eee' }} />
+                            <Bar dataKey="count" fill="#8884d8" background={{ fill: `Math.random() * maxVal` }} />
                         </BarChart>
                     </div>
                     <div>
@@ -254,7 +257,6 @@ const Dashboard = () => {
                             <Tooltip />
                             <Legend />
                             <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-                            {/* <Line type="monotone" dataKey="uv" stroke="#82ca9d" /> */}
                         </LineChart>
                     </div>
                 </div>
